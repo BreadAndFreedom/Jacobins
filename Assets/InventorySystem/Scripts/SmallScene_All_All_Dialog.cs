@@ -8,8 +8,7 @@ public class SmallScene_All_All_Dialog : MonoBehaviour
     // Start is called before the first frame update
     [Header("文本")]
     public TextAsset textFile;
-    [Header("UI")]
-    public TMP_Text textLabel;
+
     [Header("游戏物体")]
     public GameObject dialogBackground;//面板的预制体
     public TMP_Text dialogContent;//文本的预制体
@@ -17,17 +16,14 @@ public class SmallScene_All_All_Dialog : MonoBehaviour
     public List<string> names = new List<string>();
     public List<GameObject> characters = new List<GameObject>();
 
-    private GameObject dialogUI;
-    private TMP_Text dialogText;
+
     private string[] dialogRows;
     private int dialogIndex=1;
     private List<Dialog> dialogs = new List<Dialog>();
 
     void Start()
     {
-        InitializeObjects();
-        GetTextFromFile(textFile);
-        ShowDialogRow();
+        DialogModule();
     }
 
     // Update is called once per frame
@@ -35,17 +31,18 @@ public class SmallScene_All_All_Dialog : MonoBehaviour
     {
         
     }
-
-    void GetTextFromFile(TextAsset textFile)
+    public void DialogModule()
+    {
+        InitializeObjects();
+        GetTextFromFile();
+        ShowDialogRow();
+    }
+    void GetTextFromFile()
     {
         dialogRows = textFile.text.Split('\n');
         Debug.Log(dialogRows[dialogIndex]);
     }
-    public void UpdateText(string _text)
-    {
-        textLabel.text = _text;
 
-    }
     public void ShowDialogRow()
     {
         foreach (var row in dialogRows)

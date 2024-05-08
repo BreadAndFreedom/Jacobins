@@ -1,25 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class TurnBaseScene_Player_MainCharacter_SecondMenu : MonoBehaviour
 {
-    public GameObject secondMenu;
+    public List<GameObject> childs = new List<GameObject>();
     private bool isActive=false;
     // Start is called before the first frame update
     public void MakeChildVisible()
     {
         if(isActive==false)
         {
-            Debug.Log("打开");
             isActive = true;
-            secondMenu.SetActive(isActive);
+            Debug.Log("打开");
+            foreach(var child in childs)
+            {
+                child.SetActive(isActive);
+            }
         }
         else if(isActive==true)
         {
-            Debug.Log("关闭");
             isActive = false;
-            secondMenu.SetActive(isActive);
+            Debug.Log("关闭");
+            foreach (var child in childs)
+            {
+                child.SetActive(isActive);
+            }
         }
         
     }
