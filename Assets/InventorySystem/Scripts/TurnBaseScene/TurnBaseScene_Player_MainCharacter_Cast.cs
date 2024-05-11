@@ -21,10 +21,11 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
     private int dialogIndex = 1;
     private List<Dialog> dialogs = new List<Dialog>();
     private bool isSettled = false;
+    private bool hasEnd = false;
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F)&&hasEnd==false)
         {
             OnClickNext();
         }
@@ -70,7 +71,9 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
                 foreach (var canva in characters)
                 {
                     canva.SetActive(false);
+                    
                 }
+                hasEnd = true;
             }
         }
     }
