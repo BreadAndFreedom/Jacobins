@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurnBaseScene_Background_Background_Parallax : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform farBackground, midBackground,nearBackground_Front,nearBackground_Back,Character;
+    public Transform farBackground, midBackground,nearBackground,Character;
     public float farSpeed;
     public float midSpeed;
     public float nearSpeed;
@@ -23,8 +23,7 @@ public class TurnBaseScene_Background_Background_Parallax : MonoBehaviour
         Character.position += new Vector3(amountToMove.x * 1f, amountToMove.y * 1f, 0f);
         farBackground.position += new Vector3(amountToMove.x * farSpeed, amountToMove.y * farSpeed, 0f);
         midBackground.position += new Vector3(amountToMove.x * midSpeed, amountToMove.y * midSpeed, 0f);
-        nearBackground_Front.position += new Vector3(amountToMove.x * nearSpeed, amountToMove.y * nearSpeed, 0f);
-        nearBackground_Back.position += new Vector3(amountToMove.x * nearSpeed, amountToMove.y * nearSpeed, 0f);
+        nearBackground.position += new Vector3(amountToMove.x * nearSpeed, amountToMove.y * nearSpeed, 0f);
         lastPos = transform.position;
 
     }
