@@ -8,18 +8,20 @@ public class SmallScene_Quest_QuestableNPCs_QuestSystem : MonoBehaviour
 { 
     [SerializeField]
     public List<Quest> questList=new List<Quest>();
-    public TMP_Text questText;
+    public List<TMP_Text> questTextList;
 
-    void UpdateClues()
+    public void UpdateClues()
     {
         if (questList.Count!=0)
         {
-            questText.text = questList[0].questText;
+            int index = 0;
+            foreach(var quest in questList)
+            {
+                questTextList[index].text = quest.questText;
+                index++;
+            }
+
         }
 
-    }
-    private void Update()
-    {
-        UpdateClues();
     }
 }

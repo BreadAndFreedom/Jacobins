@@ -17,7 +17,10 @@ public class TurnBaseScene_DIalog_Dialog_DialogManager : MonoBehaviour
         dialogList[index].SetActive(true);
         index++;
     }
+    public void ShowAppointedDialog()
+    {
 
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))

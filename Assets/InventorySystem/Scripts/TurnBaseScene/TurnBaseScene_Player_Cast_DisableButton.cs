@@ -14,4 +14,5 @@ public class TurnBaseScene_Player_Cast_DisableButton : MonoBehaviour
             button.interactable = false;
         }
     }
+
 }
