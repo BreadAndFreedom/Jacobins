@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BigScene.unity
     guid: f2570986e03fcf54f9f0909346dc5538
+  - enabled: 1
+    path: Assets/Scenes/E1P1.unity
+    guid: 36bfbb24632c5b04a85ff1b19e1607de
+  - enabled: 1
+    path: Assets/Scenes/E0P2.unity
+    guid: 5d33c6f5b507da744a46d6bec48f1496
   m_configObjects: {}

@@ -10,7 +10,9 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
     // Start is called before the first frame update
     [Header("文本")]
     public TextAsset textFile;
-
+    [Header("游戏物体")]
+    //public GameObject camera;
+    public GameObject healthManager;
     [Header("角色名称与游戏物体对应")]
     public List<string> names = new List<string>();
     public List<GameObject> characters = new List<GameObject>();
@@ -61,6 +63,7 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
                         }
                         dialogs[dialog.index].text.text = cells[3];//更新文本
                     }
+
                 }
                 dialogIndex = int.Parse(cells[4]);
                 break;
@@ -74,6 +77,10 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
                     
                 }
                 hasEnd = true;
+            }
+            else if (cells[0] == "&")
+            {
+
             }
         }
     }
@@ -106,6 +113,7 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
         }
         
     }
+   
 
     public class Dialog
     {

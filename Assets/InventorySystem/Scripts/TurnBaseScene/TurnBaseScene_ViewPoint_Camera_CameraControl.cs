@@ -23,4 +23,12 @@ public class TurnBaseScene_ViewPoint_Camera_CameraControl : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
     }
+    public void MoveCameraToRight()
+    {
+        animator.SetBool("IsMoving", true);
+    }
+    public void MoveCameraToLeft()
+    {
+        animator.SetBool("IsMoving", false);
+    }
 }

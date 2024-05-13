@@ -18,10 +18,10 @@ public class SmallScene_Player_MainCharacter_EnterBigScene : MonoBehaviour
     }
     public void OnTriggerStay(Collider other)
     {
-        Debug.Log("大熊，我要进来了");
-        if (Input.GetKeyDown(KeyCode.F))
+        //Debug.Log("大熊，我要进来了");
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            SceneManager.LoadScene("BigScene");
+            SceneManager.LoadScene("E0P2");
         }
     }
 }
