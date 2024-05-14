@@ -17,5 +17,6 @@ public class SmallScene_Protagonist_MainCharacter_Move : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         gameObject.transform.Translate(speed * Time.deltaTime*horizontal, 0, 0);
+        gameObject.GetComponent<Animator>().SetFloat("horizontal", Input.GetAxis("Horizontal"));
     }
 }

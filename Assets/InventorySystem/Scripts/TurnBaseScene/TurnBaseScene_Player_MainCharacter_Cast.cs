@@ -27,7 +27,7 @@ public class TurnBaseScene_Player_MainCharacter_Cast : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)&&hasEnd==false)
+        if (Input.GetKeyDown(KeyCode.Mouse0)&&hasEnd==false)
         {
             OnClickNext();
         }

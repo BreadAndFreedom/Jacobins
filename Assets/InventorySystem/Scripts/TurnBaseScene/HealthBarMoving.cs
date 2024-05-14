@@ -16,7 +16,7 @@ public class HealthBarMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float changeHealth = healthManager.health - lastHealth;
+        float changeHealth =  lastHealth- healthManager.health;
         gameObject.transform.Translate(changeHealth / speed,0,0);
         lastHealth = healthManager.health;
 
