@@ -511,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newQuest:
     questName: 
-    questText: "\u65CB\u98CE\u65A9"
+    questText: "\u6751\u6C11\u544A\u8BC9\u6211\u53BB\u65C1\u8FB9\u7684\u9152\u9986\u91CC\u6BD4\u8F83\u9002\u5408\u6253\u542C\u6D88\u606F"
     isFinished: 0
     questIMG: {fileID: 0}
   questManager: {fileID: 1688363456}
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u548C\u62F3\u51FB\u624B\u8C08\u8BDD"
+  m_text: "\u5728\u6751\u5E84\u91CC\u56DB\u5904\u6253\u63A2\u4E0B\u6D88\u606F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb5fa95ba572f034bb94eaf598878178, type: 2}
   m_sharedMaterial: {fileID: -2882084006578718355, guid: eb5fa95ba572f034bb94eaf598878178, type: 2}
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u548C\u6559\u7EC3\u6C9F\u901A"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb5fa95ba572f034bb94eaf598878178, type: 2}
   m_sharedMaterial: {fileID: -2882084006578718355, guid: eb5fa95ba572f034bb94eaf598878178, type: 2}
